@@ -5,7 +5,7 @@ import { FaPlus } from "react-icons/fa";
 import { useInputContext } from '@/app/to-do-list/_context';
 
 export const EnterButton = () => {
-  const { setToDoList, toDoList, currentInput, setCurrentInput, setInputError, inputError } = useInputContext()
+  const { setToDoList, toDoList, currentInput, setCurrentInput, setInputError } = useInputContext()
 
   const onClick = useCallback(() => {
     if (!currentInput) {

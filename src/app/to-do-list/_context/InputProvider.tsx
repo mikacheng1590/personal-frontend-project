@@ -1,4 +1,4 @@
-import { createContext, useMemo, useState, useContext } from 'react'
+import { createContext, useState, useContext } from 'react'
 import { IToDoItem } from "../_interface/toDoList"
 
 interface IInputContext {

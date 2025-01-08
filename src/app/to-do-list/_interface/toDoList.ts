@@ -11,6 +11,6 @@ export interface IGeneralInput {
   error?: string
   placeholder?: string
   className?: string
-  ref?: RefObject<any>
+  ref?: RefObject<HTMLInputElement>
   onChangeFunc: (e: React.ChangeEvent<HTMLInputElement>) => void
 }

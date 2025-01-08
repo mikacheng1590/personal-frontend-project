@@ -8,6 +8,9 @@ import {
   useSensor,
   useSensors,
   DragOverlay,
+  DragStartEvent,
+  DragEndEvent,
+  UniqueIdentifier
 } from '@dnd-kit/core';
 import {
   arrayMove,
@@ -35,12 +38,14 @@ export const ItemList = () => {
     })
   );
 
-  const handleDragEnd = (event: any) => {
+  const handleDragEnd = (event: DragEndEvent) => {
     const { active, over } = event;
+
+    if (!over) return
     
     if (active.id !== over.id) {
       setToDoList((items) => {
-        const findIdx = (id: string) => items.map(({ id }) => id).indexOf(id)
+        const findIdx = (uid: UniqueIdentifier) => items.map(({ id }) => id).indexOf(uid as string)
         const oldIndex = findIdx(active.id);
         const newIndex = findIdx(over.id);
         
@@ -51,7 +56,7 @@ export const ItemList = () => {
     setActiveItem(null);
   }
 
-  const handleDragStart = useCallback((event: any) => {
+  const handleDragStart = useCallback((event: DragStartEvent) => {
     const currentDraggingItem = toDoList.find(({ id }) => id === event.active.id) ?? null;
     setActiveItem(currentDraggingItem)
   }, [toDoList])

@@ -1,4 +1,4 @@
-import { CloseButton, TextInput } from '@mantine/core';
+import { CloseButton } from '@mantine/core';
 import { useClickOutside } from '@mantine/hooks';
 import { useCallback, useEffect, useState } from 'react';
 import { FaPen } from "react-icons/fa";
@@ -10,7 +10,7 @@ import { GeneralInput } from './GeneralInput';
 export const Item = ({
   id,
   content,
-  timestamp
+  // timestamp
 }: IToDoItem) => {
   const { toDoList, setToDoList } = useInputContext()
   const [ isDisplay, setIsDisplay ] = useState<boolean>(true)
@@ -20,7 +20,7 @@ export const Item = ({
 
   const onClickDelete = useCallback(() => {
     setToDoList(toDoList.filter(item => item.id !== id))
-  }, [toDoList])
+  }, [id, setToDoList, toDoList])
 
   const closeDisplay = () => {
     setIsDisplay(false)
@@ -41,7 +41,7 @@ export const Item = ({
         : item
       }
     ))
-  }, [id, itemContent, toDoList])
+  }, [id, itemContent, setToDoList, toDoList])
 
   const ref = useClickOutside(() => {
     if (!itemContent) {
