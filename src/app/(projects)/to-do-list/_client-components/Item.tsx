@@ -2,8 +2,8 @@ import { CloseButton } from '@mantine/core';
 import { useClickOutside } from '@mantine/hooks';
 import { useCallback, useEffect, useState } from 'react';
 import { FaPen } from "react-icons/fa";
-import { IToDoItem } from "@/app/to-do-list/_interface/toDoList"
-import { useInputContext } from '@/app/to-do-list/_context';
+import { IToDoItem } from "@/app/(projects)/to-do-list/_interface/toDoList"
+import { useInputContext } from '@/app/(projects)/to-do-list/_context';
 import { useIsTouchDevice } from '@/app/_common/hooks';
 import { GeneralInput } from './GeneralInput';
 

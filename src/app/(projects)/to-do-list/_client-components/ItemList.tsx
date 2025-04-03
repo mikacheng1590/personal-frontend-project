@@ -18,9 +18,9 @@ import {
   sortableKeyboardCoordinates,
   verticalListSortingStrategy,
 } from '@dnd-kit/sortable';
-import { useInputContext } from "@/app/to-do-list/_context";
-import { SortableItem } from "@/app/to-do-list/_client-components";
-import { IToDoItem } from "@/app/to-do-list/_interface/toDoList"
+import { useInputContext } from "@/app/(projects)/to-do-list/_context";
+import { SortableItem } from "@/app/(projects)/to-do-list/_client-components";
+import { IToDoItem } from "@/app/(projects)/to-do-list/_interface/toDoList"
 
 export const ItemList = () => {
   const { toDoList, setToDoList } = useInputContext()

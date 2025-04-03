@@ -2,8 +2,8 @@ import { useMemo } from 'react';
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { MdDragIndicator } from "react-icons/md";
-import { IToDoItem } from "@/app/to-do-list/_interface/toDoList"
-import { Item } from "@/app/to-do-list/_client-components";
+import { IToDoItem } from "@/app/(projects)/to-do-list/_interface/toDoList"
+import { Item } from "@/app/(projects)/to-do-list/_client-components";
 
 export const SortableItem = ({
   id,

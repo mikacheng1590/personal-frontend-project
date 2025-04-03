@@ -2,7 +2,7 @@ import { useCallback } from 'react';
 import { Button } from '@mantine/core';
 import { FaPlus } from "react-icons/fa";
 
-import { useInputContext } from '@/app/to-do-list/_context';
+import { useInputContext } from '@/app/(projects)/to-do-list/_context';
 
 export const EnterButton = () => {
   const { setToDoList, toDoList, currentInput, setCurrentInput, setInputError } = useInputContext()
