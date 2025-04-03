@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { FaPen } from "react-icons/fa";
 import { IToDoItem } from "@/app/to-do-list/_interface/toDoList"
 import { useInputContext } from '@/app/to-do-list/_context';
-import { useIsTouchDevice } from '@/app/_hooks';
+import { useIsTouchDevice } from '@/app/_common/hooks';
 import { GeneralInput } from './GeneralInput';
 
 export const Item = ({
