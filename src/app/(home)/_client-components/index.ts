@@ -1,3 +1,3 @@
 'use client'
 
-export { Name } from './Name'
+export { default as Name } from './Name'
