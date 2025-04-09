@@ -13,7 +13,7 @@ type SectionDef = {
 }
 
 type HorizontalSectionProps = {
-  scroller: string;
+  scroller?: string;
 }
 
 const sectionsDefList = [
@@ -49,8 +49,9 @@ export default function HorizontalSection({
     gsap.to(sectionsRefs, {
       xPercent: -100 * (sectionsRefs.length - 1),
       duration: 0.1,
+      delay: 0.5,
       scrollTrigger: {
-        scroller: `.${scroller}`,
+        ...(scroller && { scroller: `.${scroller}` }),
         trigger: triggerRef.current,
         pin: true,
         scrub: 1,

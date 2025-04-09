@@ -6,7 +6,7 @@ import ScrollTrigger from "gsap/ScrollTrigger"
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 type TitleProps = {
-  scroller: string;
+  scroller?: string;
   trigger: string;
 }
 
@@ -21,7 +21,7 @@ export default function SelfIntroTitle({
   useGSAP(() => {
     let tl = gsap.timeline({
       scrollTrigger: {
-        scroller: `.${scroller}`,
+        ...(scroller && { scroller: `.${scroller}` }),
         trigger: `.${trigger}`,
         start: "top 50%",
       }
