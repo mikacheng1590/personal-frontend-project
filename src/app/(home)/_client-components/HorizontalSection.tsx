@@ -19,12 +19,12 @@ type HorizontalSectionProps = {
 
 const sectionsDefList = [
   {
-    id: "one",
+    id: "hypebeast",
     component: <Hypebeast />,
     element: null
   },
   {
-    id: "two",
+    id: "yoov-asiatop",
     component: <YoovAsiaTop />,
     element: null
   },
@@ -48,16 +48,16 @@ export default function HorizontalSection({
     gsap.to(sectionsRefs, {
       xPercent: -100 * (sectionsRefs.length - 1),
       duration: 0.1,
-      delay: 0.5,
+      delay: 0.1,
       scrollTrigger: {
         ...(scroller && { scroller: `.${scroller}` }),
         trigger: triggerRef.current,
         pin: true,
         scrub: 1,
-        snap: {
-          snapTo: 1 / (sectionsRefs.length - 1),
-          // duration: 0.1,
-        },
+        // snap: {
+        //   snapTo: 1 / (sectionsRefs.length - 1),
+        //   duration: 0.1,
+        // },
         // base vertical scrolling on how wide the container is so it feels more natural.
         end: "+=3500",
       }
