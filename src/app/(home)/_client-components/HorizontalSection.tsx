@@ -2,13 +2,14 @@ import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger"
+import Hypebeast from "./professional-experience/Hypebeast";
+import YoovAsiaTop from "./professional-experience/YoovAsiaTop";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 type SectionDef = {
   id: string;
-  backgroundColor: string;
-  text: string;
+  component: React.ReactNode;
   element: HTMLDivElement | null;
 }
 
@@ -19,14 +20,12 @@ type HorizontalSectionProps = {
 const sectionsDefList = [
   {
     id: "one",
-    backgroundColor: "bg-mika-maroon-100",
-    text: "ONE",
+    component: <Hypebeast />,
     element: null
   },
   {
     id: "two",
-    backgroundColor: "bg-mika-blue-50",
-    text: "TWO",
+    component: <YoovAsiaTop />,
     element: null
   },
 ]
@@ -68,8 +67,8 @@ export default function HorizontalSection({
   return (
     <div className="h-screen flex flex-nowrap w-[200vw] overscroll-none" ref={triggerRef}>
       {sectionsDefList.map((section, index) => (
-        <div key={section.id} className={`min-h-screen w-full ${section.backgroundColor} flex items-center justify-center`} ref={(e) => addRef(e, index)}>
-          {section.text}
+        <div key={section.id} className="min-h-screen w-full flex items-center justify-center" ref={(e) => addRef(e, index)}>
+          {section.component}
         </div>
       ))}      
     </div>
