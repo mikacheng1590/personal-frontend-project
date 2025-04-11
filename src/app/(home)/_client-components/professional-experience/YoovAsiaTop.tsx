@@ -5,7 +5,7 @@ import Tag from "./Tag";
 
 export default function YoovAsiaTop() {
   return (
-    <div className="h-full w-full flex flex-col lg:flex-row">
+    <div className="h-full w-full flex flex-col lg:flex-row overflow-y-scroll">
       <div className="h-full w-full bg-mika-blue-50 flex justify-center">
         <div className="container p-4 md:p-8">
           <JobTitleAndCompany

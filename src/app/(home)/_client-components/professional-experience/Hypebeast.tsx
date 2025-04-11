@@ -7,7 +7,7 @@ import Tag from "./Tag";
 export default function Hypebeast() {
   return (
     <div className="h-full w-full bg-mika-maroon-100 flex justify-center">
-      <div className="container overflow-hidden flex flex-col p-4 md:p-8">
+      <div className="container overflow-y-scroll flex flex-col p-4 md:p-8">
         <JobTitleAndCompany
           company="Hypebeast"
           title="Web Developer"
