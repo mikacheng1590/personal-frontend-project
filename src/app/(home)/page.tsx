@@ -4,7 +4,7 @@ import { Name, SelfIntroTitle, HorizontalSection, SelfIntro } from "./_client-co
 
 const mainContainer = "main-container"
 const selfIntroSection = "self-intro-section"
-const workSection = "work-section"
+const professionalExperienceSection = "professional-experience-section"
 
 export default function Home() {
 
@@ -25,7 +25,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className={`${workSection} overflow-x-hidden`}>
+      <section className={`${professionalExperienceSection} overflow-x-hidden`}>
         <HorizontalSection />
       </section>
     </main>
