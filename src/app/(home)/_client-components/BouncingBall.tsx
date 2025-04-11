@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import COLORS from "../_constants/colors";
 
 gsap.registerPlugin(useGSAP);
 
@@ -13,26 +14,6 @@ type BouncingBallProps = {
   originalTop?: string;
   mOriginalTop?: string;
 };
-
-const colors = [
-  "#D62828",
-  "#F77F00",
-  "#FCBF49",
-  "#2A4E28",
-  "#316C8C",
-  "#A3431A",
-  "#687C4F",
-];
-
-// const colors = [
-//   "mika-red-100",
-//   "mika-orange-50",
-//   "mika-yellow-100",
-//   "mika-green-100",
-//   "mika-blue-50",
-//   "mika-maroon-50",
-//   "mika-green-50",
-// ]
 
 export default function BouncingBall({
   className = "",
@@ -67,7 +48,7 @@ export default function BouncingBall({
         duration: 0.5,
         ease: "power2.in", // accelerate down
         onComplete: () => {
-          setColorIndex(prev => prev + 1 > colors.length - 1 ? 0 : prev + 1);
+          setColorIndex(prev => prev + 1 > COLORS.length - 1 ? 0 : prev + 1);
         }
       })
 
@@ -84,7 +65,7 @@ export default function BouncingBall({
       className={`w-[18px] h-[18px] md:w-[24px] md:h-[24px] rounded-full ${className}`}
       ref={ballRef}
       style={{
-        backgroundColor: colors[colorIndex],
+        backgroundColor: COLORS[colorIndex],
       }}
     ></span>
   );

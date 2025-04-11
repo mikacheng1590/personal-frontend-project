@@ -1,0 +1,1 @@
+export { default as getRandomIndices } from "./getRandomIndices";
