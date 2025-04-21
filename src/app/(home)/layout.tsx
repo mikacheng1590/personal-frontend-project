@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import '../globals.css';
-import '../home.css';
 
 const figtree = Figtree({
   variable: "--font-figtree",
