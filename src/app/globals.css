@@ -1,14 +1,53 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@tailwind theme;
+@import 'tailwindcss';
 
-@layer utilities {
-  .no-scrollbar::-webkit-scrollbar {
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-mika-blue-50: #316c8c;
+  --color-mika-blue-100: #003049;
+
+  --color-mika-red-100: #d62828;
+
+  --color-mika-maroon-50: #a3431a;
+  --color-mika-maroon-100: #9e2f21;
+
+  --color-mika-orange-50: #f77f00;
+  --color-mika-orange-100: #f7b538;
+
+  --color-mika-yellow-50: #eae2b7;
+  --color-mika-yellow-100: #fcbf49;
+
+  --color-mika-green-50: #687c4f;
+  --color-mika-green-100: #2a4e28;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@utility no-scrollbar {
+  &::-webkit-scrollbar {
     display: none;
   }
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@layer utilities {
+  @tailwind theme;
 }

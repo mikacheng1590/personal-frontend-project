@@ -41,7 +41,7 @@ export default function Video({
   return (
     <div className="relative w-fit group" ref={triggerRef}>
       <video
-        className="w-full max-w-[400px] h-full aspect-[8/5]"
+        className="w-full max-w-[400px] h-full aspect-8/5"
         muted
         autoPlay={autoPlay}
         ref={videoRef}
