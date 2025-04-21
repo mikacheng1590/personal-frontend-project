@@ -7,7 +7,7 @@ export default function YoovAsiaTop() {
   return (
     <div className="h-full w-full flex flex-col lg:flex-row overflow-y-scroll">
       <div className="h-full w-full bg-mika-blue-50 flex justify-center">
-        <div className="container p-4 md:p-8">
+        <div className="container overflow-y-scroll p-4 md:p-8">
           <JobTitleAndCompany
             company="Yoov Internet Technology"
             title="Full Stack Developer"
@@ -27,7 +27,7 @@ export default function YoovAsiaTop() {
         </div>
       </div>
       <div className="h-full w-full bg-mika-orange-50 flex justify-center">
-        <div className="container p-4 md:p-8 flex flex-col h-full">
+        <div className="container overflow-y-scroll p-4 md:p-8 flex flex-col h-full">
           <JobTitleAndCompany
             company="AsiaTop Loyalty"
             title="Web Developer"

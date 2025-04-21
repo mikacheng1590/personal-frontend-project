@@ -1,10 +1,11 @@
 "use client"
 
-import { Name, SelfIntroTitle, HorizontalSection, SelfIntro } from "./_client-components";
+import { Name, SelfIntroTitle, HorizontalSection, SelfIntro, Carousel } from "./_client-components";
 
 const mainContainer = "main-container"
 const selfIntroSection = "self-intro-section"
 const professionalExperienceSection = "professional-experience-section"
+const selfProjectsSection = "self-projects-section"
 
 export default function Home() {
 
@@ -27,6 +28,14 @@ export default function Home() {
       </section>
       <section className={`${professionalExperienceSection} overflow-x-hidden`}>
         <HorizontalSection />
+      </section>
+      <section className={`${selfProjectsSection} h-full min-h-[800px] w-full bg-mika-blue-100 flex items-center justify-center`}>
+        <div className="container">
+          <h6 className="text-mika-blue-50 text-2xl md:text-6xl font-bold uppercase text-center mb-4 md:mb-8">
+            Self Projects
+          </h6>
+          <Carousel />
+        </div>
       </section>
     </main>
   );
