@@ -32,7 +32,7 @@ export default function Home() {
       <section className={`${selfProjectsSection} h-full min-h-[800px] w-full bg-mika-blue-100 flex items-center justify-center`}>
         <div className="container">
           <h6 className="text-mika-blue-50 text-2xl md:text-6xl font-bold uppercase text-center mb-4 md:mb-8">
-            Self Projects
+            Something I've Built
           </h6>
           <Carousel />
         </div>

@@ -1,6 +1,38 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Card from './Card';
+import Card, { CardProps } from './Card';
+
+const cardData: CardProps[] = [
+  {
+    title: "Portfolio Website",
+    content: (
+      <>
+        <h5>Yes You're Looking At It!</h5>
+        <p>A portfolio website built with Next.js, Tailwind CSS, and GSAP.</p>
+      </>
+    )
+  },
+  {
+    title: "21 Days",
+    content: (
+      <>
+        <h5>Habit Builder</h5>
+        <p>A responsive web app designed to help users build habits and stay accountable! Users can create habit-tracking projects, log daily entries, and receive reminders when they miss a day. Stay on track, achieve your goals, and build consistency with Habit Builder!</p>
+        <a href="https://21-days.mikacheng.com" target="_blank" rel="noopener noreferrer" className="mt-4">Try Now</a>
+      </>
+    )
+  },
+  {
+    title: "Price Tracker for Paula's Choice Product",
+    content: (
+      <>
+        <h5>Let me know when the price drops!</h5>
+        <p>I've been using a certain Paula's Choice product for years and I love them! But I hate paying full price for them. So I built this price tracker to let me know when the price drops. I set a cron job to check the price everyday and send me an email if the price drops. For now, it's only tracking one product, but I will definitely upgrade it to track multiple products in the future.</p>
+        <a href="https://github.com/mikacheng1590/personal-backend-project/tree/main" target="_blank" rel="noopener noreferrer" className="mt-4">See some code</a>
+      </>
+    )
+  },
+];
 
 export default function SelfProjectCarousel() {
   const responsive = {
@@ -34,9 +66,13 @@ export default function SelfProjectCarousel() {
       // dotListClass="custom-dot-list-style"
       itemClass="p-3"
     >
-      <Card />
-      <Card />
-      <Card />
+      {cardData.map((card, index) => (
+        <Card 
+          key={index}
+          title={card.title}
+          content={card.content}
+        />
+      ))}
     </Carousel> 
   );
 }
