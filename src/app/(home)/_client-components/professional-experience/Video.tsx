@@ -4,12 +4,14 @@ type VideoProps = {
   src: string;
   title?: string;
   autoPlay?: boolean;
+  className?: string;
 };
 
 export default function Video({
   src,
   title,
   autoPlay = false,
+  className = "",
 }: VideoProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const triggerRef = useRef<HTMLDivElement>(null);
@@ -39,14 +41,14 @@ export default function Video({
   }, []);
 
   return (
-    <div className="relative w-fit group" ref={triggerRef}>
+    <div className={`relative w-fit group ${className}`} ref={triggerRef}>
       <video
-        className="w-full max-w-[400px] h-full aspect-8/5"
+        className="w-full h-full"
         muted
         autoPlay={autoPlay}
         ref={videoRef}
         src={src} />
-      {!autoPlay && (
+      {!autoPlay && title && (
         <div className="absolute top-0 left-0 w-full h-full bg-white/50 flex items-center justify-center opacity-100 group-hover:invisible group-hover:opacity-0 ease-in-out duration-300">
           <span className="text-white text-base md:text-xl font-bold bg-mika-maroon-50 px-4 py-2">{title}</span>
         </div>

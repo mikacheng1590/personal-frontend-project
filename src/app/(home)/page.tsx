@@ -1,11 +1,12 @@
 "use client"
 
-import { Name, SelfIntroTitle, HorizontalSection, SelfIntro, Carousel } from "./_client-components";
+import { Name, SelfIntroTitle, HorizontalSection, SelfIntro, Carousel, Video } from "./_client-components";
 
 const mainContainer = "main-container"
 const selfIntroSection = "self-intro-section"
 const professionalExperienceSection = "professional-experience-section"
 const selfProjectsSection = "self-projects-section"
+const personalVideoSection = "personal-video-section"
 
 export default function Home() {
 
@@ -35,6 +36,13 @@ export default function Home() {
             Something I've Built
           </h6>
           <Carousel />
+        </div>
+      </section>
+      <section className={`${personalVideoSection} h-full min-h-[800px] w-full bg-mika-green-50 flex items-center justify-center`}>
+        <div className="container flex items-center justify-center p-4 md:p-8">
+          <Video
+            src="https://txrfmzxgqvckqzumiquw.supabase.co/storage/v1/object/public/misc/showcase-hb100.mp4"
+          />
         </div>
       </section>
     </main>
