@@ -1,14 +1,13 @@
 "use client"
 
-import { Name, SelfIntroTitle, HorizontalSection, SelfIntro, Carousel, Video } from "./_client-components";
+import { Name, SelfIntroTitle, HorizontalSection, SelfIntro, Carousel, Video, ContactIconRow } from "./_client-components";
 
 const selfIntroSection = "self-intro-section"
 const professionalExperienceSection = "professional-experience-section"
 const selfProjectsSection = "self-projects-section"
-const personalVideoSection = "personal-video-section"
+const contactSection = "contact-section"
 
 export default function Home() {
-
   return (
     <main>
       <section className="my-name-section h-full h-screen min-h-[400px] w-full bg-mika-yellow-50 flex items-center justify-center overflow-hidden">
@@ -37,11 +36,15 @@ export default function Home() {
           <Carousel />
         </div>
       </section>
-      <section className={`${personalVideoSection} h-screen min-h-[800px] w-full bg-mika-green-50 flex items-center justify-center`}>
-        <div className="container flex items-center justify-center p-4 md:p-8">
+      <section className={`${contactSection} h-screen min-h-[300px] md:min-h-[800px] w-full bg-mika-yellow-50 flex items-center justify-center`}>
+        <div className="container flex items-center justify-center flex-col p-4 md:p-8">
           <Video
             src="https://txrfmzxgqvckqzumiquw.supabase.co/storage/v1/object/public/misc/showcase-hb100.mp4"
+            className="w-full lg:w-4xl"
           />
+          <div className="mt-4 md:mt-8">
+            <ContactIconRow />
+          </div>
         </div>
       </section>
     </main>

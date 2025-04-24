@@ -31,11 +31,11 @@ export default function Hypebeast() {
           <Video
             src="https://txrfmzxgqvckqzumiquw.supabase.co/storage/v1/object/public/misc/showcase-hb100.mp4"
             title="HYPEBEAST 100"
-            className="max-w-[400px] aspect-8/5" />
+            className="max-w-[400px] aspect-8/5 w-fit" />
           <Video
             src="https://txrfmzxgqvckqzumiquw.supabase.co/storage/v1/object/public/misc//showcase-pbcityguide.mp4"
             title="POPBEE CITY GUIDE"
-            className="max-w-[400px] aspect-8/5" />
+            className="max-w-[400px] aspect-8/5 w-fit" />
         </div>
 
         {/* Video Section (Mobile) */}
@@ -46,14 +46,14 @@ export default function Hypebeast() {
                 autoPlay={true}
                 src="https://txrfmzxgqvckqzumiquw.supabase.co/storage/v1/object/public/misc/showcase-hb100.mp4"
                 title="HYPEBEAST 100"
-                className="max-w-[400px] aspect-8/5" />
+                className="max-w-[400px] aspect-8/5 w-fit" />
             </div>
             <div className="snap-start w-full shrink-0">
               <Video
                 autoPlay={true}
                 src="https://txrfmzxgqvckqzumiquw.supabase.co/storage/v1/object/public/misc/showcase-pbcityguide.mp4"
                 title="POPBEE CITY GUIDE"
-                className="max-w-[400px] aspect-8/5" />
+                className="max-w-[400px] aspect-8/5 w-fit" />
             </div>
           </div>
         </div>

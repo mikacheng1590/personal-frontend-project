@@ -41,7 +41,7 @@ export default function Video({
   }, []);
 
   return (
-    <div className={`relative w-fit group ${className}`} ref={triggerRef}>
+    <div className={`relative group ${className}`} ref={triggerRef}>
       <video
         className="w-full h-full"
         muted
