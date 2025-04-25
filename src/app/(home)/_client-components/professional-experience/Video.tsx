@@ -3,14 +3,18 @@ import { useEffect, useRef } from "react";
 type VideoProps = {
   src: string;
   title?: string;
+  poster?: string;
   autoPlay?: boolean;
+  muted?: boolean;
   className?: string;
 };
 
 export default function Video({
   src,
   title,
+  poster = "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDV4ZGF1dWgwejJtdzE4ZGhoczZvMmMwbjBwbGV0dG13M2djb3dyYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pK4av7uBK3I4M/giphy.gif",
   autoPlay = false,
+  muted = true,
   className = "",
 }: VideoProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -44,8 +48,9 @@ export default function Video({
     <div className={`relative group ${className}`} ref={triggerRef}>
       <video
         className="w-full h-full"
-        muted
+        muted={muted}
         autoPlay={autoPlay}
+        poster={poster}
         ref={videoRef}
         src={src} />
       {!autoPlay && title && (
