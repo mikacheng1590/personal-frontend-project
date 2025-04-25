@@ -65,7 +65,7 @@ export default function HorizontalSection({
   }, [scroller]);
 
   return (
-    <div className="h-screen flex flex-nowrap w-[200vw] overscroll-none" ref={triggerRef}>
+    <div className="h-screen md:min-h-[800px] flex flex-nowrap w-[200vw] overscroll-none" ref={triggerRef}>
       {sectionsDefList.map((section, index) => (
         <div key={section.id} className="min-h-screen w-full flex items-center justify-center" ref={(e) => addRef(e, index)}>
           {section.component}
