@@ -19,9 +19,9 @@ const contacts = [
 export default function ContactIconRow() {
   return (
     <div className="flex justify-center items-center gap-8">
-      <h4 className="text-sm md:text-3xl font-bold uppercase">
+      <h6 className="text-sm md:text-3xl font-bold uppercase">
         Find me <span className="relative bottom-[3px]">@</span>
-      </h4>
+      </h6>
       {contacts.map((contact) => (
         <CurtainIcon
           key={contact.link}

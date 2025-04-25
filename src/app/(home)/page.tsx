@@ -30,9 +30,9 @@ export default function Home() {
       </section>
       <section className={`${selfProjectsSection} h-screen min-h-[800px] w-full bg-mika-blue-100 flex items-center justify-center`}>
         <div className="container">
-          <h6 className="text-mika-blue-50 text-2xl md:text-6xl font-bold uppercase text-center mb-4 md:mb-8">
+          <h2 className="text-mika-blue-50 text-2xl md:text-6xl font-bold uppercase text-center mb-4 md:mb-8">
             Something I've Built
-          </h6>
+          </h2>
           <Carousel />
         </div>
       </section>

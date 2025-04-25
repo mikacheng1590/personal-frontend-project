@@ -2,7 +2,7 @@ import BouncingBall from "./BouncingBall";
 
 export default function Name() {
   return (
-    <h1 className="font-bold text-mika-blue-100 text-center flex flex-col items-center lg:flex-row lg:gap-x-8">
+    <h1 className="font-bold text-mika-blue-100 text-center flex flex-col items-center lg:flex-row lg:gap-x-8" aria-label="Mika Cheng">
       <span className="first-name inline-flex items-baseline">
         <span className="text-7xl md:text-9xl">M</span>
         <span className="relative inline-block">

@@ -45,7 +45,7 @@ export default function SelfIntroTitle({
 
 
   return (
-    <h2 className="flex gap-4 flex-col items-center lg:flex-row">
+    <h2 className="flex gap-4 flex-col items-center lg:flex-row" aria-label="A Little Bit About Myself">
       <svg width="347" height="42" viewBox="0 0 347 42" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-auto h-6 lg:h-auto">
         <defs>
           <clipPath id="a-little-bit">
