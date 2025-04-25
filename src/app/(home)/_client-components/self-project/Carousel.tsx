@@ -7,7 +7,7 @@ const cardData: CardProps[] = [
     title: "Portfolio Website",
     content: (
       <>
-        <h5>Yes You're Looking At It!</h5>
+        <h5>Yes You&apos;re Looking At It!</h5>
         <p>A portfolio website built with React, Tailwind CSS, and GSAP.</p>
       </>
     )
@@ -23,11 +23,11 @@ const cardData: CardProps[] = [
     )
   },
   {
-    title: "Price Tracker for Paula's Choice Product",
+    title: "Price Tracker for Paula&apos;s Choice Product",
     content: (
       <>
         <h5>Let me know when the price drops!</h5>
-        <p>I've been using a certain Paula's Choice product for years and I love it! But I hate paying full price. So I built this price tracker to let me know when the price drops. I set a cron job to check the price everyday and send me an email if the price drops. For now, it's only tracking one product, but I will definitely upgrade it to track multiple products in the future.</p>
+        <p>I&apos;ve been using a certain Paula&apos;s Choice product for years and I love it! But I hate paying full price. So I built this price tracker to let me know when the price drops. I set a cron job to check the price everyday and send me an email if the price drops. For now, it&apos;s only tracking one product, but I will definitely upgrade it to track multiple products in the future.</p>
         <a href="https://github.com/mikacheng1590/personal-backend-project/tree/main" target="_blank" rel="noopener noreferrer" className="mt-4">See some code</a>
       </>
     )

@@ -42,7 +42,7 @@ export default function Video({
         trigger?.removeEventListener("mouseleave", handleMouseLeave);
       }
     };
-  }, []);
+  }, [autoPlay]);
 
   return (
     <div className={`relative group ${className}`} ref={triggerRef}>

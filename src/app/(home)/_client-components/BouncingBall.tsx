@@ -26,20 +26,20 @@ export default function BouncingBall({
   const [colorIndex, setColorIndex] = useState(0);
 
   useGSAP(() => {
-    let mm = gsap.matchMedia(), breakPoint = 768
+    const mm = gsap.matchMedia(), breakPoint = 768
 
     mm.add({
       isDesktop: `(min-width: ${breakPoint}px)`,
       isMobile: `(max-width: ${breakPoint - 1}px)`,
     },
     (context) => {
-      let isDesktop = context.conditions?.isDesktop;
+      const isDesktop = context.conditions?.isDesktop;
 
       gsap.set(ballRef.current, {
         top: isDesktop ? originalTop : mOriginalTop,
       })
 
-      let tl = gsap.timeline({
+      const tl = gsap.timeline({
         repeat: -1,
       })
 

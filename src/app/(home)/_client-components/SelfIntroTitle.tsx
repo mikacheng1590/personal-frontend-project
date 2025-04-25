@@ -19,7 +19,7 @@ export default function SelfIntroTitle({
   const myselfRef = useRef<SVGRectElement>(null);
 
   useGSAP(() => {
-    let tl = gsap.timeline({
+    const tl = gsap.timeline({
       scrollTrigger: {
         ...(scroller && { scroller: `.${scroller}` }),
         trigger: `.${trigger}`,

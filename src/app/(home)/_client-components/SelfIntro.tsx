@@ -52,16 +52,16 @@ export default function SelfIntro({
       ref={textRef}
       className="text-base/6 md:text-3xl/10 font-bold"
     >
-      Hi there! I'm Mika — a <HighlightedWord 
+      Hi there! I&apos;m Mika — a <HighlightedWord 
         word="proactive" 
         timeline={timeline}
       /> and <HighlightedWord 
       word="collaborative" 
       timeline={timeline}
-      /> developer with a strong passion for creating engaging digital experiences. Over the past few years, I've worked on projects ranging from interactive marketing campaigns to internal workflow automation and e-commerce features. I enjoy working closely with <HighlightedWord 
+      /> developer with a strong passion for creating engaging digital experiences. Over the past few years, I&apos;ve worked on projects ranging from interactive marketing campaigns to internal workflow automation and e-commerce features. I enjoy working closely with <HighlightedWord 
       word="cross-functional" 
       timeline={timeline}
-    /> teams, solving problems creatively, and making sure every project runs smoothly from start to finish. I'm <HighlightedWord 
+    /> teams, solving problems creatively, and making sure every project runs smoothly from start to finish. I&apos;m <HighlightedWord 
     word="detail-oriented" 
     timeline={timeline}
   />, <HighlightedWord 
