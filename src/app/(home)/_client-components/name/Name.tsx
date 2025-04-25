@@ -1,4 +1,4 @@
-import BouncingBall from "./BouncingBall";
+import BouncingBall from "../BouncingBall";
 
 export default function Name() {
   return (

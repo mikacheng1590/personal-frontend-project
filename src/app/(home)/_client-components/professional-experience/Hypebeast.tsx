@@ -1,4 +1,4 @@
-import Video from "./Video";
+import Video from "../Video";
 import JobTitleAndCompany from "./JobTitleAndCompany";
 import JobDesc from "./JobDesc";
 import Title from "./Title";

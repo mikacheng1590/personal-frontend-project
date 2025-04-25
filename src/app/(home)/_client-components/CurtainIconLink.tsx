@@ -6,7 +6,7 @@ type CurtainIconProps = {
 
 const hoverAnimation = "group-hover/curtain-icon:translate-y-[calc(-100%+-7px)] transition-transform duration-400 ease-out"
 
-export default function CurtainIcon({
+export default function CurtainIconLink({
   className = "",
   icon,
   link

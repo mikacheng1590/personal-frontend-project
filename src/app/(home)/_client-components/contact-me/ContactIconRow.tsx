@@ -1,4 +1,4 @@
-import CurtainIcon from "../CurtainIcon";
+import CurtainIconLink from "../CurtainIconLink";
 import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const contacts = [
@@ -23,7 +23,7 @@ export default function ContactIconRow() {
         Find me <span className="relative bottom-[3px]">@</span>
       </h6>
       {contacts.map((contact) => (
-        <CurtainIcon
+        <CurtainIconLink
           key={contact.link}
           icon={contact.icon}
           link={contact.link}

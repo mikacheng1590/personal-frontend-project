@@ -1,6 +1,6 @@
 "use client"
 
-import { Name, SelfIntroTitle, HorizontalSection, SelfIntro, Carousel, Video, ContactIconRow } from "./_client-components";
+import { Name, SelfIntroTitle, ProfessionalExperience, SelfIntro, Carousel, Video, ContactIconRow } from "./_client-components";
 
 const selfIntroSection = "self-intro-section"
 const professionalExperienceSection = "professional-experience-section"
@@ -26,7 +26,7 @@ export default function Home() {
         </div>
       </section>
       <section className={`${professionalExperienceSection} overflow-x-hidden`}>
-        <HorizontalSection />
+        <ProfessionalExperience />
       </section>
       <section className={`${selfProjectsSection} h-screen min-h-[800px] w-full bg-mika-blue-100 flex items-center justify-center`}>
         <div className="container">

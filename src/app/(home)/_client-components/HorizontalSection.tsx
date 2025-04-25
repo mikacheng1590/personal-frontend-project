@@ -2,8 +2,6 @@ import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger"
-import Hypebeast from "./professional-experience/Hypebeast";
-import YoovAsiaTop from "./professional-experience/YoovAsiaTop";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -13,25 +11,14 @@ type SectionDef = {
   element: HTMLDivElement | null;
 }
 
-type HorizontalSectionProps = {
+export type HorizontalSectionProps = {
   scroller?: string;
+  sectionsDefList: SectionDef[];
 }
-
-const sectionsDefList = [
-  {
-    id: "hypebeast",
-    component: <Hypebeast />,
-    element: null
-  },
-  {
-    id: "yoov-asiatop",
-    component: <YoovAsiaTop />,
-    element: null
-  },
-]
 
 export default function HorizontalSection({
   scroller,
+  sectionsDefList
 }: HorizontalSectionProps) {
   const sections = useRef<SectionDef[]>(sectionsDefList);
   const triggerRef = useRef(null);  
