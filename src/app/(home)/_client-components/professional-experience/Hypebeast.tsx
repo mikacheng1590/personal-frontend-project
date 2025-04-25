@@ -44,14 +44,14 @@ export default function Hypebeast() {
             <div className="snap-start w-full shrink-0">
               <Video
                 autoPlay={true}
-                src="https://txrfmzxgqvckqzumiquw.supabase.co/storage/v1/object/public/misc/showcase-hb100.mp4"
+                src="https://txrfmzxgqvckqzumiquw.supabase.co/storage/v1/object/public/misc//showcase-hb100-mobile.mp4"
                 title="HYPEBEAST 100"
                 className="max-w-[400px] aspect-8/5 w-fit" />
             </div>
             <div className="snap-start w-full shrink-0">
               <Video
                 autoPlay={true}
-                src="https://txrfmzxgqvckqzumiquw.supabase.co/storage/v1/object/public/misc/showcase-pbcityguide.mp4"
+                src="https://txrfmzxgqvckqzumiquw.supabase.co/storage/v1/object/public/misc//showcase-pbcityguide-mobile.mp4"
                 title="POPBEE CITY GUIDE"
                 className="max-w-[400px] aspect-8/5 w-fit" />
             </div>
