@@ -52,16 +52,22 @@ export default function SelfIntro({
       ref={textRef}
       className="text-base/6 md:text-3xl/10 font-bold"
     >
-      Hi there! I'm Mika, a frontend developer <HighlightedWord 
-        word="passionate" 
+      Hi there! I'm Mika — a <HighlightedWord 
+        word="proactive" 
         timeline={timeline}
-      /> with 3 years of experience... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in turpis pharetra, luctus sem vel, tincidunt dolor. Quisque in viverra enim. Morbi sed ligula faucibus elit pretium convallis vel sit amet mi. Phasellus ut ligula at nunc elementum dapibus. Praesent tincidunt mi id mauris placerat vestibulum. Pellentesque quis consequat risus, vitae rhoncus est. <HighlightedWord 
-        word="creative" 
-        timeline={timeline}
-      /> Fusce id dolor eleifend, tempor metus a, gravida leo. Sed ullamcorper massa at dapibus luctus. Pellentesque quis posuere libero. Cras eleifend viverra massa, <HighlightedWord 
-        word="innovative" 
-        timeline={timeline}
-      /> sit amet volutpat nunc tempus eget. Duis venenatis, ligula non vulputate mattis, erat justo porta ligula, et pharetra neque urna sed nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+      /> and <HighlightedWord 
+      word="collaborative" 
+      timeline={timeline}
+      /> developer with a strong passion for creating engaging digital experiences. Over the past few years, I've worked on projects ranging from interactive marketing campaigns to internal workflow automation and e-commerce features. I enjoy working closely with <HighlightedWord 
+      word="cross-functional" 
+      timeline={timeline}
+    /> teams, solving problems creatively, and making sure every project runs smoothly from start to finish. I'm <HighlightedWord 
+    word="detail-oriented" 
+    timeline={timeline}
+  />, <HighlightedWord 
+  word="adaptable" 
+  timeline={timeline}
+  />, and always excited to bring ideas to life through thoughtful planning and teamwork.
     </p>
   );
 }
