@@ -7,9 +7,9 @@ const selfProjectsSection = "self-projects-section"
 const contactSection = "contact-section"
 
 type HomeProps = {
-  searchParams: {
+  searchParams: Promise<{
     f: string
-  }
+  }>
 }
 
 export default async function Home({
