@@ -1,15 +1,25 @@
-"use client"
-
-import { Name, SelfIntroTitle, ProfessionalExperience, SelfIntro, Carousel, Video, ContactIconRow } from "./_client-components";
+import { Name, SelfIntroTitle, ProfessionalExperience, SelfIntro, Carousel, Video, ContactIconRow } from "@/app/(home)/_client-components";
+import StartModal from "@/app/(home)/_server-components/initial-section/StartModal";
 
 const selfIntroSection = "self-intro-section"
 const professionalExperienceSection = "professional-experience-section"
 const selfProjectsSection = "self-projects-section"
 const contactSection = "contact-section"
 
-export default function Home() {
+type HomeProps = {
+  searchParams: {
+    f: string
+  }
+}
+
+export default async function Home({
+  searchParams,
+}: HomeProps) {
+  const { f } = await searchParams
+
   return (
     <main>
+      <StartModal queryString={f}/>
       <section className="my-name-section h-full h-screen min-h-[400px] w-full bg-mika-yellow-50 flex items-center justify-center overflow-hidden">
         <Name />
       </section>

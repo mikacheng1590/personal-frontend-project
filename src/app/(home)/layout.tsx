@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
+import { MantineProvider } from "@mantine/core";
+import '@mantine/core/styles.css';
 import '../globals.css';
 
 const figtree = Figtree({
@@ -22,7 +24,9 @@ export default function RootLayout({
       <body
         className={`${figtree.className} antialiased`}
       >
-        {children}
+        <MantineProvider>
+          {children}
+        </MantineProvider>
       </body>
     </html>
   );
