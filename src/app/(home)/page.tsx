@@ -19,7 +19,7 @@ export default async function Home({
 
   return (
     <main>
-      <StartModal queryString={f}/>
+      {f && <StartModal queryString={f}/>}
       <section className="my-name-section h-full h-screen min-h-[400px] w-full bg-mika-yellow-50 flex items-center justify-center overflow-hidden">
         <Name />
       </section>
