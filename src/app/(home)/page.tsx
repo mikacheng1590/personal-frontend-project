@@ -49,7 +49,9 @@ export default async function Home({
       <section className={`${contactSection} h-screen min-h-[300px] md:min-h-[800px] w-full bg-mika-yellow-50 flex items-center justify-center`}>
         <div className="container flex items-center justify-center flex-col p-4 md:p-8">
           <Video
-            src="https://txrfmzxgqvckqzumiquw.supabase.co/storage/v1/object/public/misc/showcase-hb100.mp4"
+            src="https://txrfmzxgqvckqzumiquw.supabase.co/storage/v1/object/public/misc/casual-facts.mp4"
+            poster="https://txrfmzxgqvckqzumiquw.supabase.co/storage/v1/object/public/misc//casual-facts-poster.png"
+            muted={false}
             className="w-full lg:w-4xl"
           />
           <div className="mt-4 md:mt-8">
