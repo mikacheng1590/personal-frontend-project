@@ -8,7 +8,7 @@ const contactSection = "contact-section"
 
 type HomeProps = {
   searchParams: Promise<{
-    f: string
+    f?: string
   }>
 }
 
