@@ -51,6 +51,7 @@ export default async function Home({
           <Video
             src="https://txrfmzxgqvckqzumiquw.supabase.co/storage/v1/object/public/misc/casual-facts.mp4"
             poster="https://txrfmzxgqvckqzumiquw.supabase.co/storage/v1/object/public/misc//casual-facts-poster.png"
+            autoPlay={false}
             muted={false}
             className="w-full lg:w-4xl"
           />
