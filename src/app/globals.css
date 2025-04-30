@@ -51,3 +51,5 @@
 @layer utilities {
   @tailwind theme;
 }
+
+@custom-variant no-hover (@media not all and (hover: hover));
