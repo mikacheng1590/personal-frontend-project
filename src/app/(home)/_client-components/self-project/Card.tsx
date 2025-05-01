@@ -15,7 +15,7 @@ export default function Card({
         </div>
         <div className="flip-card-back absolute w-full h-full bg-mika-yellow-50 transform-[rotateY(180deg)] backface-hidden">
           <div className="p-4 flex flex-col items-center justify-center h-full text-mika-orange-50 [&>h5]:underline [&>h5]:text-base [&>h5]:md:text-xl [&>h5]:font-bold [&>h5]:mb-2 [&>p]:text-base [&>p]:md:text-xl [&>a]:py-2 [&>a]:px-4 [&>a]:rounded [&>a]:bg-mika-orange-50 [&>a]:text-mika-yellow-100 [&>a]:font-bold [&>a]:hover:opacity-50">
-            <h3 className="text-mika-orange-50 text-2xl md:text-3xl font-bold uppercase p-4 no-hover:block hidden">{title}</h3>
+            <h3 className="text-mika-orange-50 text-2xl md:text-3xl font-bold uppercase p-4 no-hover:block hidden" dangerouslySetInnerHTML={{ __html: title }}></h3>
             {content}
           </div>
         </div>
