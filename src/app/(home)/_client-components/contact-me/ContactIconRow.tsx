@@ -3,15 +3,15 @@ import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const contacts = [
   {
-    icon: <FaEnvelope className="text-3xl md:text-6xl"/>,
+    icon: <FaEnvelope className="text-5xl md:text-6xl"/>,
     link: "mailto:fungcheukman@hotmail.com"
   },
   {
-    icon: <FaLinkedin className="text-3xl md:text-6xl"/>,
+    icon: <FaLinkedin className="text-5xl md:text-6xl"/>,
     link: "https://linkedin.com/in/mika-fung"
   },
   {
-    icon: <FaGithub className="text-3xl md:text-6xl"/>,
+    icon: <FaGithub className="text-5xl md:text-6xl"/>,
     link: "https://github.com/mikacheng1590"
   }
 ]
