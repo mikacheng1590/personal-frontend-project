@@ -15,7 +15,7 @@ export default function TitleAndCompany({
         {title}
       </span>
       <span className="text-sm md:text-3xl font-bold uppercase">
-        <span className="relative bottom-[3px]">@</span>{company}
+        <span className="relative md:bottom-[3px]">@</span>{company}
       </span>
     </h3>
   );
