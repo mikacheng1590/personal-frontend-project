@@ -1,15 +1,15 @@
-import { useInputContext } from '@/app/(projects)/to-do-list/_context';
-import { GeneralInput } from './GeneralInput';
+import { useInputContext } from "@/app/(projects)/to-do-list/_context";
+import { GeneralInput } from "./GeneralInput";
 
 export const Input = () => {
-  const { currentInput, setCurrentInput, inputError } = useInputContext()
-  
+  const { currentInput, setCurrentInput, inputError } = useInputContext();
+
   return (
     <GeneralInput
-      className='w-full'
+      className="w-full"
       value={currentInput}
       error={inputError}
       onChangeFunc={(e) => setCurrentInput(e.target.value)}
     />
-  )
-}
+  );
+};

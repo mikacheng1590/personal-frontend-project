@@ -2,7 +2,10 @@ import BouncingBall from "../BouncingBall";
 
 export default function Name() {
   return (
-    <h1 className="font-bold text-mika-blue-100 text-center flex flex-col items-center lg:flex-row lg:gap-x-8 select-none" aria-label="Mika Cheng">
+    <h1
+      className="font-bold text-mika-blue-100 text-center flex flex-col items-center lg:flex-row lg:gap-x-8 select-none"
+      aria-label="Mika Cheng"
+    >
       <span className="first-name inline-flex items-baseline">
         <span className="text-7xl md:text-9xl">M</span>
         <span className="relative inline-block">
@@ -13,7 +16,7 @@ export default function Name() {
       </span>
       <span className="last-name inline-block uppercase">
         <span className="text-7xl md:text-9xl">CHENG</span>
-      </span>      
+      </span>
     </h1>
-  )
+  );
 }

@@ -1,3 +1,3 @@
 export type PortfolioModal = {
-  show_text: string
-}
+  show_text: string;
+};

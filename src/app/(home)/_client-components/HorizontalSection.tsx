@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger"
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -9,25 +9,25 @@ type SectionDef = {
   id: string;
   component: React.ReactNode;
   element: HTMLDivElement | null;
-}
+};
 
 export type HorizontalSectionProps = {
   scroller?: string;
   sectionsDefList: SectionDef[];
-}
+};
 
 export default function HorizontalSection({
   scroller,
-  sectionsDefList
+  sectionsDefList,
 }: HorizontalSectionProps) {
   const sections = useRef<SectionDef[]>(sectionsDefList);
-  const triggerRef = useRef(null);  
+  const triggerRef = useRef(null);
 
   const addRef = (el: HTMLDivElement | null, index: number) => {
     if (el) {
       sections.current[index].element = el;
     }
-  }
+  };
 
   useGSAP(() => {
     const sectionsRefs = sections.current.map((section) => section.element);
@@ -47,17 +47,24 @@ export default function HorizontalSection({
         // },
         // base vertical scrolling on how wide the container is so it feels more natural.
         end: "+=3500",
-      }
-    })
+      },
+    });
   }, [scroller]);
 
   return (
-    <div className="h-screen md:min-h-[800px] flex flex-nowrap w-[200vw] overscroll-none" ref={triggerRef}>
+    <div
+      className="h-screen md:min-h-[800px] flex flex-nowrap w-[200vw] overscroll-none"
+      ref={triggerRef}
+    >
       {sectionsDefList.map((section, index) => (
-        <div key={section.id} className="min-h-screen w-full flex items-center justify-center" ref={(e) => addRef(e, index)}>
+        <div
+          key={section.id}
+          className="min-h-screen w-full flex items-center justify-center"
+          ref={(e) => addRef(e, index)}
+        >
           {section.component}
         </div>
-      ))}      
+      ))}
     </div>
-  )
+  );
 }

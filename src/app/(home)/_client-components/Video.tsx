@@ -55,10 +55,13 @@ export default function Video({
         playsInline={playsInline}
         poster={poster}
         ref={videoRef}
-        src={src} />
+        src={src}
+      />
       {!autoPlay && title && (
         <div className="absolute top-0 left-0 w-full h-full bg-white/50 flex items-center justify-center opacity-100 group-hover:invisible group-hover:opacity-0 ease-in-out duration-300">
-          <span className="text-white text-base md:text-xl font-bold bg-mika-maroon-50 px-4 py-2">{title}</span>
+          <span className="text-white text-base md:text-xl font-bold bg-mika-maroon-50 px-4 py-2">
+            {title}
+          </span>
         </div>
       )}
     </div>

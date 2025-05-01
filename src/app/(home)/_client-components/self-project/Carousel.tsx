@@ -1,6 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Card, { CardProps } from './Card';
+import Card, { CardProps } from "./Card";
 
 const cardData: CardProps[] = [
   {
@@ -10,27 +10,53 @@ const cardData: CardProps[] = [
         <h5>Yes You&apos;re Looking At It!</h5>
         <p>A portfolio website built with React, Tailwind CSS, and GSAP.</p>
       </>
-    )
+    ),
   },
   {
     title: "21 Days",
     content: (
       <>
         <h5>Habit Builder</h5>
-        <p>A responsive web app designed to help users build habits and stay accountable! Users can create habit-tracking projects, log daily entries, and receive reminders when they miss a day. Stay on track, achieve goals, and build consistency with it!</p>
-        <a href="https://21-days.mikacheng.com" target="_blank" rel="noopener noreferrer" className="mt-4">Try Now</a>
+        <p>
+          A responsive web app designed to help users build habits and stay
+          accountable! Users can create habit-tracking projects, log daily
+          entries, and receive reminders when they miss a day. Stay on track,
+          achieve goals, and build consistency with it!
+        </p>
+        <a
+          href="https://21-days.mikacheng.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4"
+        >
+          Try Now
+        </a>
       </>
-    )
+    ),
   },
   {
     title: "Price Tracker for Paula&apos;s Choice Product",
     content: (
       <>
         <h5>Let me know when the price drops!</h5>
-        <p>I&apos;ve been using a certain Paula&apos;s Choice product for years and I love it! But I hate paying full price. So I built this price tracker to let me know when the price drops. I set a cron job to check the price everyday and send me an email if the price drops. For now, it&apos;s only tracking one product, but I will definitely upgrade it to track multiple products in the future.</p>
-        <a href="https://github.com/mikacheng1590/personal-backend-project/tree/main" target="_blank" rel="noopener noreferrer" className="mt-4">See some code</a>
+        <p>
+          I&apos;ve been using a certain Paula&apos;s Choice product for years
+          and I love it! But I hate paying full price. So I built this price
+          tracker to let me know when the price drops. I set a cron job to check
+          the price everyday and send me an email if the price drops. For now,
+          it&apos;s only tracking one product, but I will definitely upgrade it
+          to track multiple products in the future.
+        </p>
+        <a
+          href="https://github.com/mikacheng1590/personal-backend-project/tree/main"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4"
+        >
+          See some code
+        </a>
       </>
-    )
+    ),
   },
 ];
 
@@ -47,7 +73,7 @@ export default function SelfProjectCarousel() {
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1,
-    }
+    },
   };
   return (
     <Carousel
@@ -67,12 +93,8 @@ export default function SelfProjectCarousel() {
       itemClass="p-3"
     >
       {cardData.map((card, index) => (
-        <Card 
-          key={index}
-          title={card.title}
-          content={card.content}
-        />
+        <Card key={index} title={card.title} content={card.content} />
       ))}
-    </Carousel> 
+    </Carousel>
   );
 }

@@ -1,1 +1,1 @@
-export { useIsTouchDevice } from './useDetectTouchDevice'
+export { useIsTouchDevice } from "./useDetectTouchDevice";

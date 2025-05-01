@@ -26,39 +26,44 @@ export default function BouncingBall({
   const [colorIndex, setColorIndex] = useState(0);
 
   useGSAP(() => {
-    const mm = gsap.matchMedia(), breakPoint = 768
+    const mm = gsap.matchMedia(),
+      breakPoint = 768;
 
-    mm.add({
-      isDesktop: `(min-width: ${breakPoint}px)`,
-      isMobile: `(max-width: ${breakPoint - 1}px)`,
-    },
-    (context) => {
-      const isDesktop = context.conditions?.isDesktop;
+    mm.add(
+      {
+        isDesktop: `(min-width: ${breakPoint}px)`,
+        isMobile: `(max-width: ${breakPoint - 1}px)`,
+      },
+      (context) => {
+        const isDesktop = context.conditions?.isDesktop;
 
-      gsap.set(ballRef.current, {
-        top: isDesktop ? originalTop : mOriginalTop,
-      })
+        gsap.set(ballRef.current, {
+          top: isDesktop ? originalTop : mOriginalTop,
+        });
 
-      const tl = gsap.timeline({
-        repeat: -1,
-      })
+        const tl = gsap.timeline({
+          repeat: -1,
+        });
 
-      tl.to(ballRef.current, {
-        y: isDesktop ? bounceHeight : mBounceHeight,
-        duration: 0.5,
-        ease: "power2.in", // accelerate down
-        onComplete: () => {
-          setColorIndex(prev => prev + 1 > COLORS.length - 1 ? 0 : prev + 1);
-        }
-      })
+        tl.to(ballRef.current, {
+          y: isDesktop ? bounceHeight : mBounceHeight,
+          duration: 0.5,
+          ease: "power2.in", // accelerate down
+          onComplete: () => {
+            setColorIndex((prev) =>
+              prev + 1 > COLORS.length - 1 ? 0 : prev + 1,
+            );
+          },
+        });
 
-      tl.to(ballRef.current, {
-        y: 0,
-        duration: 0.5,
-        ease: "power2.out", // decelerate up
-      })
-    })
-  })
+        tl.to(ballRef.current, {
+          y: 0,
+          duration: 0.5,
+          ease: "power2.out", // decelerate up
+        });
+      },
+    );
+  });
 
   return (
     <span

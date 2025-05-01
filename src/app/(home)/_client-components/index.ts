@@ -1,12 +1,12 @@
-'use client'
+"use client";
 
-export { default as Name } from './name/Name'
-export { default as SelfIntroTitle } from './self-intro/SelfIntroTitle'
-export { default as HorizontalSection } from './HorizontalSection'
-export { default as ProfessionalExperience } from './professional-experience/ProfessionalExperience'
-export { default as SelfIntro } from './self-intro/SelfIntro'
-export { default as Card } from './self-project/Card'
-export { default as Carousel } from './self-project/Carousel'
-export { default as Video } from './Video'
-export { default as ContactIconRow } from './contact-me/ContactIconRow'
-export { default as Modal } from './Modal'
+export { default as Name } from "./name/Name";
+export { default as SelfIntroTitle } from "./self-intro/SelfIntroTitle";
+export { default as HorizontalSection } from "./HorizontalSection";
+export { default as ProfessionalExperience } from "./professional-experience/ProfessionalExperience";
+export { default as SelfIntro } from "./self-intro/SelfIntro";
+export { default as Card } from "./self-project/Card";
+export { default as Carousel } from "./self-project/Carousel";
+export { default as Video } from "./Video";
+export { default as ContactIconRow } from "./contact-me/ContactIconRow";
+export { default as Modal } from "./Modal";

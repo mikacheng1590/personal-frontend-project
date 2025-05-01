@@ -1,28 +1,26 @@
-import Hypebeast from "./Hypebeast"
-import YoovAsiaTop from "./YoovAsiaTop"
-import HorizontalSection, { HorizontalSectionProps } from "../HorizontalSection"
+import Hypebeast from "./Hypebeast";
+import YoovAsiaTop from "./YoovAsiaTop";
+import HorizontalSection, {
+  HorizontalSectionProps,
+} from "../HorizontalSection";
 
 const sectionsDefList = [
   {
     id: "hypebeast",
     component: <Hypebeast />,
-    element: null
+    element: null,
   },
   {
     id: "yoov-asiatop",
     component: <YoovAsiaTop />,
-    element: null
+    element: null,
   },
-]
+];
 
-export default function ProfessionalExperience ({
-  scroller
-}: Omit<HorizontalSectionProps, "sectionsDefList">
-) {
+export default function ProfessionalExperience({
+  scroller,
+}: Omit<HorizontalSectionProps, "sectionsDefList">) {
   return (
-    <HorizontalSection
-      scroller={scroller}
-      sectionsDefList={sectionsDefList}
-    />
-  )
+    <HorizontalSection scroller={scroller} sectionsDefList={sectionsDefList} />
+  );
 }
