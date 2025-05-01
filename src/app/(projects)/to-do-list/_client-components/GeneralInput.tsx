@@ -1,14 +1,14 @@
-import { TextInput } from '@mantine/core';
-import { IGeneralInput } from '@/app/(projects)/to-do-list/_interface/toDoList';
+import { TextInput } from "@mantine/core";
+import { IGeneralInput } from "@/app/(projects)/to-do-list/_interface/toDoList";
 
 export const GeneralInput: React.FC<IGeneralInput> = ({
   value,
   onChangeFunc,
-  error = '',
-  placeholder = 'What to do?',
-  className = '',
-  ref = null
-}) => {  
+  error = "",
+  placeholder = "What to do?",
+  className = "",
+  ref = null,
+}) => {
   return (
     <TextInput
       className={className}
@@ -18,5 +18,5 @@ export const GeneralInput: React.FC<IGeneralInput> = ({
       onChange={onChangeFunc}
       ref={ref}
     />
-  )
-}
+  );
+};

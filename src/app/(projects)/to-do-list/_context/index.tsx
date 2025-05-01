@@ -1,3 +1,3 @@
-'use client'
+"use client";
 
-export { InputProvider, InputContext, useInputContext } from "./InputProvider"
+export { InputProvider, InputContext, useInputContext } from "./InputProvider";

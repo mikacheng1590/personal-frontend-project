@@ -6,11 +6,9 @@ import COLORS from "../../_constants/colors";
 
 type TagProps = {
   tag: string;
-}
+};
 
-export default function Tag({
-  tag
-}: TagProps) {
+export default function Tag({ tag }: TagProps) {
   const tagRef = useRef<HTMLSpanElement>(null);
 
   useGSAP(() => {
@@ -33,7 +31,10 @@ export default function Tag({
   }, [tag]);
 
   return (
-    <span className="bg-[#FCFFF7] text-xs md:text-lg font-bold uppercase py-1 px-4 inline-block text-center" ref={tagRef}>
+    <span
+      className="bg-[#FCFFF7] text-xs md:text-lg font-bold uppercase py-1 px-4 inline-block text-center"
+      ref={tagRef}
+    >
       {tag}
     </span>
   );

@@ -32,12 +32,14 @@ export default function Hypebeast() {
             src="https://txrfmzxgqvckqzumiquw.supabase.co/storage/v1/object/public/misc/showcase-hb100.mp4"
             title="HYPEBEAST 100"
             poster="https://txrfmzxgqvckqzumiquw.supabase.co/storage/v1/object/public/misc//showcase-hb100-poster.png"
-            className="max-w-[400px] aspect-8/5 w-fit" />
+            className="max-w-[400px] aspect-8/5 w-fit"
+          />
           <Video
             src="https://txrfmzxgqvckqzumiquw.supabase.co/storage/v1/object/public/misc//showcase-pbcityguide.mp4"
             title="POPBEE CITY GUIDE"
             poster="https://txrfmzxgqvckqzumiquw.supabase.co/storage/v1/object/public/misc//showcase-pbcityguide.png"
-            className="max-w-[400px] aspect-8/5 w-fit" />
+            className="max-w-[400px] aspect-8/5 w-fit"
+          />
         </div>
 
         {/* Video Section (Mobile) */}
@@ -49,7 +51,8 @@ export default function Hypebeast() {
                 src="https://txrfmzxgqvckqzumiquw.supabase.co/storage/v1/object/public/misc//showcase-hb100-mobile.mp4"
                 title="HYPEBEAST 100"
                 poster="https://txrfmzxgqvckqzumiquw.supabase.co/storage/v1/object/public/misc//showcase-hb100-mobile-mobile-poster.png"
-                className="max-w-[400px] aspect-8/5 w-fit" />
+                className="max-w-[400px] aspect-8/5 w-fit"
+              />
             </div>
             <div className="snap-start w-full shrink-0">
               <Video
@@ -57,7 +60,8 @@ export default function Hypebeast() {
                 src="https://txrfmzxgqvckqzumiquw.supabase.co/storage/v1/object/public/misc//showcase-pbcityguide-mobile.mp4"
                 title="POPBEE CITY GUIDE"
                 poster="https://txrfmzxgqvckqzumiquw.supabase.co/storage/v1/object/public/misc//showcase-pbcityguide-mobile-poster.png"
-                className="max-w-[400px] aspect-8/5 w-fit" />
+                className="max-w-[400px] aspect-8/5 w-fit"
+              />
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
-import { useDisclosure } from '@mantine/hooks';
-import { Modal as MantineModal } from '@mantine/core';
+import { useDisclosure } from "@mantine/hooks";
+import { Modal as MantineModal } from "@mantine/core";
 
 type ModalProps = {
   initialOpen?: boolean;
@@ -8,15 +8,17 @@ type ModalProps = {
   headerClassName?: string;
   bodyClassName?: string;
   radius?: number;
-  closeButtonProps?: React.ComponentProps<typeof MantineModal>['closeButtonProps'];
-}
+  closeButtonProps?: React.ComponentProps<
+    typeof MantineModal
+  >["closeButtonProps"];
+};
 
 export default function Modal({
   children,
   initialOpen = false,
-  title = '',
-  headerClassName = '',
-  bodyClassName = '',
+  title = "",
+  headerClassName = "",
+  bodyClassName = "",
   radius = 0,
   closeButtonProps = {},
 }: ModalProps) {

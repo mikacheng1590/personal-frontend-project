@@ -9,9 +9,18 @@ export default function ToDoListPage() {
     <div className="flex items-center justify-center flex-col gap-y-3.5 py-3.5 mx-auto w-9/12 max-w-[800px]">
       <header className="text-4xl">To Do List</header>
       <ul>
-        <li className="flex items-center gap-x-1"><FaPlus />Add your to-do items</li>
-        <li className="flex items-center gap-x-1"><HiCursorClick />Double click to edit on computer</li>
-        <li className="flex items-center gap-x-1"><RiDragMove2Fill />Rearrange by dragging</li>
+        <li className="flex items-center gap-x-1">
+          <FaPlus />
+          Add your to-do items
+        </li>
+        <li className="flex items-center gap-x-1">
+          <HiCursorClick />
+          Double click to edit on computer
+        </li>
+        <li className="flex items-center gap-x-1">
+          <RiDragMove2Fill />
+          Rearrange by dragging
+        </li>
       </ul>
       <InputProvider>
         <Input />

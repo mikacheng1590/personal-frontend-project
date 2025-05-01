@@ -9,9 +9,9 @@ type HighlightedWordProps = {
   word?: string;
 };
 
-export default function HighlightedWord ({
+export default function HighlightedWord({
   timeline,
-  word = "hello"
+  word = "hello",
 }: HighlightedWordProps) {
   const wordRef = useRef<HTMLSpanElement>(null);
 
@@ -28,19 +28,21 @@ export default function HighlightedWord ({
       )`,
       backgroundRepeat: "no-repeat",
       backgroundSize: "0% 100%",
-    });    
+    });
 
     if (timeline) {
-      timeline.to(wordRef.current, {
-        backgroundSize: "100% 100%",
-        duration: 1,
-        ease: "cubic-bezier(0.645, 0.045, 0.355, 1)",
-        stagger: 0.1
-      }, ">");
+      timeline.to(
+        wordRef.current,
+        {
+          backgroundSize: "100% 100%",
+          duration: 1,
+          ease: "cubic-bezier(0.645, 0.045, 0.355, 1)",
+          stagger: 0.1,
+        },
+        ">",
+      );
     }
   }, [timeline]);
-  
-  return (
-    <span ref={wordRef}>{word}</span>
-  );
-};
+
+  return <span ref={wordRef}>{word}</span>;
+}
