@@ -1,5 +1,5 @@
 import { TextInput } from '@mantine/core';
-import { IGeneralInput } from '@/app/to-do-list/_interface/toDoList';
+import { IGeneralInput } from '@/app/(projects)/to-do-list/_interface/toDoList';
 
 export const GeneralInput: React.FC<IGeneralInput> = ({
   value,

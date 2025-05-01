@@ -1,4 +1,4 @@
-import { useInputContext } from '@/app/to-do-list/_context';
+import { useInputContext } from '@/app/(projects)/to-do-list/_context';
 import { GeneralInput } from './GeneralInput';
 
 export const Input = () => {
