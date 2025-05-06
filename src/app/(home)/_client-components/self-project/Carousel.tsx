@@ -53,7 +53,26 @@ const cardData: CardProps[] = [
           rel="noopener noreferrer"
           className="mt-4"
         >
-          See some code
+          See Some Code
+        </a>
+      </>
+    ),
+  },
+  {
+    title: "Kiln Craft Chronicle",
+    content: (
+      <>
+        <h5>To document my journey into the world of pottery</h5>
+        <p className="!text-sm !md:text-base">
+          I&apos;ve started to do pottery recently, and realize it would be
+          helpful to document my process. Wanting to build it quickly, I turned to Lovable to create an MVP, and within just 8 hours, I had a working version after building with the help of the AI tool and some debugging myself. I can see why people rave about how fast and efficient AI-powered development can be—it&apos;s incredibly empowering for rapid prototyping. That said, I also experienced firsthand why people caution about AI-generated code creating technical debt. While the tool helped me move fast, the resulting code wasn&apos;t always the most optimized or maintainable, reinforcing the importance of reviewing and refining AI output with a developer&apos;s eye.
+        </p>
+        <a
+          href="https://kiln.mikacheng.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Try Now
         </a>
       </>
     ),
